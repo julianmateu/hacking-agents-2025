@@ -5,6 +5,19 @@ To run langflow using docker:
 docker-compose up -d
 ```
 
+# Setup
+
+Copy the env file and set up the correct tokens:
+```bash
+cp .env.example .env
+```
+
+(Optional) create a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
 ## Telegram Bot Image Saving
 
 This project includes a Telegram bot using aiogram. When a user sends an image to the bot, it will be saved in the `images` folder and the bot will reply with "I got the image!". Other messages will be echoed back.

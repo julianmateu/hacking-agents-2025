@@ -11,7 +11,9 @@ from aiogram.types import Message, File
 
 # You can get the bot token at https://t.me/BotFather
 # IMPORTANT: specify your token
-TOKEN = "7639600747:AAFHYYs9M_ji9I83IPTD2VsM8VoYidxkRmk"
+from dotenv import load_dotenv
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
 
 dp = Dispatcher()
 
