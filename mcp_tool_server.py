@@ -1,7 +1,6 @@
 # mcp_tool_server.py
 """
 A minimal MCP server exposing a tool for Langflow.
-This tool takes any text input and returns "i've got this matee".
 """
 
 from fastapi import FastAPI, Request
@@ -127,12 +126,11 @@ async def generate_image_endpoint(request: Request):
         return {"error": str(e)}
 
     # Generate or load image
-    # try:
-    #     image_path = generate_openai_image()
-    # except Exception as e:
-    #     logging.error(f"Image generation failed: {e}")
-    #     return {"error": str(e)}
-    image_path = 'images/chat-gpt.png'
+    try:
+        image_path = generate_openai_image()
+    except Exception as e:
+        logging.error(f"Image generation failed: {e}")
+        return {"error": str(e)}
 
     files = {'photo': open(image_path, 'rb')}
     status = requests.post(f"https://api.telegram.org/bot{TOKEN}/sendPhoto?chat_id=" + str(chat_id), files=files)

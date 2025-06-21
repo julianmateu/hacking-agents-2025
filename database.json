@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "id": "couch001",
+      "type": "sofa",
+      "name": "Jackson 4-Seater Sofa",
+      "price": null,
+      "purchase_url": "https://www.cotswoldco.com/sofas-and-armchairs/jackson/4-seater-sofa/house-weave/natural",
+      "image_url": "https://www.cotswoldco.com/_next/image/?url=https%3A%2F%2Fcotswoldco-cdn.azureedge.net%2Fproducts%2F4043.446_ny8xiud7.6.jpg&w=1920&q=75",
+      "description": "A spacious and modern 4-seater sofa in natural house weave fabric, featuring clean lines and plush cushions—ideal for contemporary living rooms."
+    },
+    {
+      "id": "pillow001",
+      "type": "pillow",
+      "name": "Jule Cushion Cover - Indigo/Natural",
+      "price": null,
+      "purchase_url": "https://www.oka.com/products/jule-cushion-cover-indigo-natural",
+      "image_url": "https://www.oka.com/cdn/shop/files/jule-cushion-cover-indigo-a17560-1-11-1139-40-01.jpg?v=1741101047&width=2880",
+      "description": "A decorative cushion cover with bold indigo geometric embroidery on a natural cotton background, perfect for adding texture and contrast to any seating area."
+    }
+  ]
+}
+
